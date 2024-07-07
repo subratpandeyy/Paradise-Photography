@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="shortcut icon" href="mainlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body bgcolor="black">
+<div class="service-contain">
+    <div class="gal-head"><header><a href="#">Contact me</a></header>
+        <input type="checkbox" id="check">
+        <div class="btn-one">
+            <label for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+
+        <div class="sidebar_menu">
+            <div class="logo">
+                <a href="#">Subrat Pandey</a>
+            </div>
+        
+
+        <div class="btn-two">
+            <label for="check">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </div>
+
+        <div class="menu">
+        <ul>
+        <li><i class="fa-solid fa-photo-film"></i><a href="index.html">Home</a></li>
+        <li><i class="fa-solid fa-image"></i><a href="gallery.html">Collections</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+
+        <div class="social-media">
+            <ul>
+                <a href="https://www.linkedin.com/in/contact-subrat-pandey/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/12SubratPandey"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/subratpandeyy/"><i class="fa-brands fa-github"></i></a>
+            </ul>
+        </div>
+
+    </div>
+</div>
+        <div class="cont-form">
+            <form id="contactForm" onsubmit="sendEmail(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write a message..."></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
+
+        <script type="text/javascript">
+            (function() {
+    emailjs.init("j-HOsfd1IlkRm0Iem");
+  })();
+
+  function sendEmail(e) {
+    e.preventDefault();
+    
+    emailjs.sendForm('service_2zjn70u', 'template_ojoo6cq' , e.target)
+      .then((result) => {
+        alert('Message sent successfully!');
+      }, (error) => {
+        alert('Failed to send message, please try again later.');
+      });
+  }
+        </script>
+</body>
+</html>

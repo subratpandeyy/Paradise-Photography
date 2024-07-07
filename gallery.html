@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="shortcut icon" href="mainlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body bgcolor="black">
+    <div class="gal-content">
+
+        <!-- <div class="gal-head"><header><a href="#">Collections</a></header> -->
+
+    <input type="checkbox" id="check">
+        <div class="btn-one"><!---btn 1 strt-->
+            <label for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+        </div><!---btn 1 end-->
+        <div class="sidebar_menu">
+            <div class="logo">
+                <a href="#">Subrat Pandey</a>
+            </div>   <!---end of logo-->
+
+            <!---btn 2 strt-->
+        <div class="btn-two">
+            <label for="check">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </div> <!---btn 2 end-->
+
+        <!---menu strt-->
+        <div class="menu">
+        <ul>
+        <li><i class="fa-solid fa-photo-film"></i><a href="index.html">Home</a></li>
+        <li><i class="fa-solid fa-image"></i><a href="gallery.html">Gallery</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div><!---menu end-->
+
+        <!-- </div>-gal-head end- -->
+
+        <div class="social-media">
+            <ul>
+                <a href="https://www.linkedin.com/in/contact-subrat-pandey/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/12SubratPandey"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/subratpandeyy/"><i class="fa-brands fa-github"></i></a>
+            </ul>
+        </div>
+
+    </div><!---gal-content end-->
+
+    <div class="full-img" id="fullimgbox">
+        <img src="img1.jpg" id="fullimg">
+        <span onclick="closefullimg()"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+
+    <div class="img-gallery">
+
+        <!-- Portraits -->
+        <img src="img1.jpg" onclick="openfullimg(this.src)">
+        <img src="img2.jpg" onclick="openfullimg(this.src)">
+        <img src="img3.jpeg" onclick="openfullimg(this.src)">
+        <img src="img4.jpeg" onclick="openfullimg(this.src)">
+
+        <img src="img5.jpeg" onclick="openfullimg(this.src)">
+        <img src="img6.jpeg" onclick="openfullimg(this.src)">
+        <img src="img7.jpg" onclick="openfullimg(this.src)">
+        <img src="img8.jpg" onclick="openfullimg(this.src)">
+        
+        <img src="img9.jpeg" onclick="openfullimg(this.src)">
+        <img src="img10.jpeg" onclick="openfullimg(this.src)">
+        <img src="img11.jpg" onclick="openfullimg(this.src)">
+        <img src="img12.jpg" onclick="openfullimg(this.src)">
+
+        <img src="img13.jpeg" onclick="openfullimg(this.src)">
+        <img src="img14.jpeg" onclick="openfullimg(this.src)">
+        <img src="img15.jpeg" onclick="openfullimg(this.src)">
+        <img src="img16.jpeg" onclick="openfullimg(this.src)">
+
+        <img src="img17.jpeg" onclick="openfullimg(this.src)">
+        <img src="img18.jpeg" onclick="openfullimg(this.src)">
+        <img src="img19.jpeg" onclick="openfullimg(this.src)">
+        <img src="img20.jpeg" onclick="openfullimg(this.src)">
+        
+        <img src="img21.jpeg" onclick="openfullimg(this.src)">
+        <img src="img22.jpeg" onclick="openfullimg(this.src)">
+        
+        <img src="img23.jpeg" onclick="openfullimg(this.src)">
+        <img src="img24.jpeg" onclick="openfullimg(this.src)">
+        <img src="img25.jpeg" onclick="openfullimg(this.src)">
+        <img src="img26.jpg" onclick="openfullimg(this.src)">
+        <img src="img21.jpeg" onclick="openfullimg(this.src)">
+        <br>
+
+        <!-- Full screen images -->
+        <img src="img29.jpg" onclick="openfullimg(this.src)">
+        <img src="img30.jpg" onclick="openfullimg(this.src)">
+        <img src="img31.jpg" onclick="openfullimg(this.src)">
+        <img src="img32.jpg" onclick="openfullimg(this.src)">
+        <img src="img33.jpg" onclick="openfullimg(this.src)">
+        <img src="img34.jpg" onclick="openfullimg(this.src)">
+        <img src="img35.jpg" onclick="openfullimg(this.src)">
+        <img src="img36.jpg" onclick="openfullimg(this.src)">
+        <img src="img37.jpg" onclick="openfullimg(this.src)">
+        <img src="img38.jpg" onclick="openfullimg(this.src)">
+        <img src="img39.jpg" onclick="openfullimg(this.src)">
+        <img src="img40.jpg" onclick="openfullimg(this.src)">
+
+        <!-- Squares -->
+        <img src="re1.jpeg" onclick="openfullimg(this.src)">
+        <img src="re2.jpg" onclick="openfullimg(this.src)">
+        <img src="re3.jpeg" onclick="openfullimg(this.src)">
+        <img src="re4.jpeg" onclick="openfullimg(this.src)">
+        <img src="re5.jpeg" onclick="openfullimg(this.src)">
+        <img src="re6.jpeg" onclick="openfullimg(this.src)">
+        <img src="re7.jpeg" onclick="openfullimg(this.src)">
+        <img src="re8.jpeg" onclick="openfullimg(this.src)">
+        <img src="re9.jpeg" onclick="openfullimg(this.src)">
+        <img src="re11.jpeg" onclick="openfullimg(this.src)">
+        <img src="re12.jpeg" onclick="openfullimg(this.src)">
+        <img src="re13.jpeg" onclick="openfullimg(this.src)">
+        <img src="re14.jpeg" onclick="openfullimg(this.src)">
+        <img src="re15.jpeg" onclick="openfullimg(this.src)">
+        <img src="re10.jpeg" onclick="openfullimg(this.src)">
+        
+        </div>
+        <!---Landscapes-->
+        <div class="land-img">
+        <img src="land1.jpg" onclick="openfullimg(this.src)">
+        <img src="land2.jpg" onclick="openfullimg(this.src)">
+        <img src="land3.jpg" onclick="openfullimg(this.src)">
+        <img src="land4.jpg" onclick="openfullimg(this.src)">
+        <img src=>
+        <img src=>
+        <img src=>
+        <img src=>
+    </div>
+    <script src="new.js"></script>
+</body>
+</html>
